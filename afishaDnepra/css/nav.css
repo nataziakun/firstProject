@@ -1,12 +1,84 @@
 .nav {
     background-color: rgba(0,0,0,.35);
+    padding: 5px 50px;
+}
+
+.nav .menu-center {
+    margin: 0 50px 0 130px;
+    text-align: center;
 }
 
 .nav .menu li {
     display: inline-block;
     vertical-align: middle;
+    margin: 0 4px;
 }
 
 .nav .menu li a {
-    
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.nav .menu li.home a {background-image: url('../img/menu_home.png');}
+.nav .menu li.map a {background-image: url('../img/menu_map.png');}
+.nav .menu li.sport a {background-image: url('../img/menu_sport.png');}
+.nav .menu li.theater a {background-image: url('../img/menu_theater.png');}
+.nav .menu li.club a {background-image: url('../img/menu_disco.png');}
+.nav .menu li.movie a {background-image: url('../img/menu_movie.png');}
+.nav .menu li.party a {background-image: url('../img/menu_party.png');}
+.nav .menu li.exhibition a {background-image: url('../img/menu_exhibit.png');}
+.nav .menu li.presentation a {background-image: url('../img/menu_presentation.png');}
+.nav .menu li.children a {background-image: url('../img/menu_children.png');}
+.nav .menu li.other a {background-image: url('../img/menu_other.png');}
+
+.nav .menu li a span,
+.nav .calendar span {
+    background: #db3b15;
+    display: none;
+    color: #fff; 
+    padding: 7px 15px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    box-shadow: 0px 2px 2px #000; 
+    position: absolute;
+    top: -40px;
+    left: 50%;
+}
+
+.nav .menu li a span:after,
+.nav .calendar span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 8.5px 0 8.5px;
+    border-color: #db3b15 transparent transparent transparent;
+    transform: rotate(35deg);
+}
+
+.nav .menu li a:hover span,
+.nav .calendar:hover span {
+    display: block;
+}
+
+.nav .calendar {
+    background-image: url('../img/icon_calendar.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 35px 40px;
+    width: 55px;
+    height: 55px;
+    position: relative;
+}
+
+.nav .calendar span {
+    display: none;
 }

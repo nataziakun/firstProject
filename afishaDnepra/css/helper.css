@@ -15,11 +15,12 @@
 .text-right {text-align: right;}
 
 /* Text Size */
-.text-xs {font-size: 14px;}
-.text-s {font-size: 14px;}
-.text-m {font-size: 14px;}
-.text-l {font-size: 14px;}
-.text-xl {font-size: 14px;}
+.text-xs {font-size: 12px;}
+.text-s {font-size: 13px;}
+.text-normal {font-size: 14px;}
+.text-m {font-size: 16px;}
+.text-l {font-size: 18px;}
+.text-xl {font-size: 20px;}
 
 /* Text Weight */
 .f-bold {font-weight: bold;}
