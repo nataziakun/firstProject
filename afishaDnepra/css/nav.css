@@ -1,0 +1,12 @@
+.nav {
+    background-color: rgba(0,0,0,.35);
+}
+
+.nav .menu li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav .menu li a {
+    
+}
