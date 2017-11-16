@@ -1,26 +1,64 @@
 .nav {
     background-color: rgba(0,0,0,.35);
-    padding: 5px 50px;
+    padding: 5px 2%;
 }
 
 .nav .menu-center {
-    margin: 0 50px 0 130px;
+    margin: 0 40px 0 100px;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .nav .menu-center {
+        margin: 0 40px 0 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav .menu-center {
+        margin: 0 50px 0 130px;
+    }
 }
 
 .nav .menu li {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 4px;
+    margin: 0 2px;
+}
+
+@media screen and (min-width: 768px) {
+    .nav .menu li  {
+        margin: 0 2px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav .menu li  {
+        margin: 0 4px;
+    }
 }
 
 .nav .menu li a {
     display: block;
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
     background-repeat: no-repeat;
     background-size: 100%;
     position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .nav .menu li a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav .menu li a {
+        width: 55px;
+        height: 55px;
+    }
 }
 
 .nav .menu li.home a {background-image: url('../img/menu_home.png');}
@@ -73,10 +111,26 @@
     background-image: url('../img/icon_calendar.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 35px 40px;
-    width: 55px;
-    height: 55px;
+    background-size: 25px 30px;
+    width: 40px;
+    height: 40px;
     position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .nav .calendar {
+        background-size: 25px 30px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav .calendar {
+        background-size: 35px 40px;
+        width: 55px;
+        height: 55px;
+    }
 }
 
 .nav .calendar span {
