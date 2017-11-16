@@ -7,3 +7,10 @@
 	background-color: rgba(255,255,255,.35);
 	min-height: 127px;
 }
+.search {
+	border-color: #878488;
+	background-color: rgba(255,255,255,.35);
+	font-size: 20px;
+	border-radius: 40px;
+	margin-top: 10px;
+}
