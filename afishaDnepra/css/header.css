@@ -1,0 +1,8 @@
+.header {
+	background: url(../img/bg_header.png) no-repeat 50% -90px;
+	min-height: 893px;
+}
+.contacts {
+	background-color: rgba(255,255,255, 0.35);
+	min-height: 127px;
+}
