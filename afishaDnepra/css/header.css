@@ -13,4 +13,28 @@
 	font-size: 20px;
 	border-radius: 40px;
 	margin-top: 10px;
+	padding: 20px 40px;
+	max-width: 470px;
+}
+.where_go {
+	font-size: 50px;
+	margin: 10px;
+}
+
+.btn {
+	border-radius: 40px;
+	background-color: #db3b15;
+	padding: 20px 35px;
+	border-color: #db3b15;
+	margin-top:10px;
+	margin-right: 40px;
+	color: white;
+}
+.e_mail {
+	background: url(../img/icon_envelope.png) no-repeat;
+}
+
+.tel 
+{
+	background: url(../img/icon_phone.png) no-repeat;
 }
