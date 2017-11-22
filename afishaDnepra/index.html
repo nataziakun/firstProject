@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/home.css">
 
     <script src="js/vendor/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/slick.min.js"></script>
-    <script src="js/vendor/home.js"></script>
+    <script src="js/home.js"></script>
 </head>
 <body>
     <header class="header">
@@ -29,15 +30,19 @@
             </a>
             <div class="contacts">
                 <form class="contat-form cf">
-                    <h3 class="fl-l where_go">Куда пойти?</h3>
+                    <h3 class="fl-l where_go ml-2">Куда пойти?</h3>
                     <div class="fl-r">
-                        <button type="submit" class="btn">ПОИСК</button>
+                        <button type="submit" class="btn mr-2">ПОИСК</button>
                         <a href="#" class="btn">ВОЙТИ</a>
                     </div>
-                    <input type="text" class="search" placeholder="Ключевое слово, имя, дата...">
+                    <div class="search">
+                        <input type="text" placeholder="Ключевое слово, имя, дата...">
+                    </div>
                 </form>
-                <span class="e_mail"> <a href="#">Наш Email: 9999999999@gmail.com </a></span>
-                <span class="tel"> <a href="">тел: 050 000 00 00; 050 000 00 00</a> </span>
+                <div class="text-center mt-2">
+                    <a href="#" class="e_mail">Наш Email: 9999999999@gmail.com </a>
+                    <a href="#" class="tel">тел: 050 000 00 00; 050 000 00 00 </a> 
+                </div>
             </div>
             <div class="top-gallery"></div>
         </div>
@@ -62,7 +67,32 @@
                     <li class="other"><a href="#"><span>Остальное</span></a></li>
                 </ul>
             </div>
-            <div class="content-wrap"></div>
+            <div class="content-wrap cf">
+                <aside class="sidebar fl-r">
+                    <ul class="social">
+                        <li class="fb"><a href="#"></a></li>
+                        <li class="twitter"><a href="#"></a></li>
+                        <li class="youtube"><a href="#"></a></li>
+                        <li class="instagram"><a href="#"></a></li>
+                    </ul>
+                    <div class="news-border">
+                        <h2>НОВОСТИ</h2>
+                        <ul class="news">
+                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                        </ul>
+                    </div>
+                </aside>
+                <main class="main-content">
+
+                </main>
+            </div>
             <footer class="footer"></footer>
         </div>
     </div>

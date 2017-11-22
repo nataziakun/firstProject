@@ -1,0 +1,49 @@
+.sidebar {
+    width: 33%;
+    /*test*/
+    min-height: 500px;
+    /*background: yellow;*/
+}
+
+.social {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.social li {
+    display: inline-block;
+    font-size: 0;
+    margin: 0 5px;
+}
+
+.social li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.social li.fb a { background-image: url(../img/icon-fb.png);}
+.social li.twitter a { background-image: url(../img/icon-twitter.png);}
+.social li.youtube a { background-image: url(../img/icon-youtube.png);}
+.social li.instagram a { background-image: url(../img/icon-instagram.png);}
+
+.news-border {
+    border: #daddde 3px solid;
+}
+
+.news li {
+    position: relative;
+    padding: 4px 0;
+}
+.news li:after{
+    position: absolute;
+    height: 4px;
+    width: 70%;
+    background-color: #8e9b9e;
+    content:"";
+    bottom: 0;
+    left:0;
+}

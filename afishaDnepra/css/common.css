@@ -1,3 +1,9 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 html,
 body {
     margin: 0;
@@ -28,6 +34,22 @@ li {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    font-weight: normal;
+}
+
+input,
+select,
+textarea,
+button {
+    border: 0;
+    background: none;
+}
+
 .cf::after {
     content: "";
     clear: both;
@@ -46,4 +68,11 @@ li {
 
 .content-wrap {
     min-height: 500px;
+}
+
+.main-content {
+    margin-right: 33%;
+    /*test*/
+    min-height: 500px;
+    background: #fff;
 }

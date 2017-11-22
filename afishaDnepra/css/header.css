@@ -6,35 +6,69 @@
 .contacts {
 	background-color: rgba(255,255,255,.35);
 	min-height: 127px;
+	padding: 10px 20px;
 }
 .search {
-	border-color: #878488;
-	background-color: rgba(255,255,255,.35);
-	font-size: 20px;
-	border-radius: 40px;
-	margin-top: 10px;
-	padding: 20px 40px;
-	max-width: 470px;
+	margin: 10px 60px 0;
 }
+
+.search input {
+	padding: 10px 15px;
+	border-radius: 40px;
+	font-size: 14px;
+	background-color: rgba(255,255,255,.35);
+	width: 100%;
+	/*margin-top: 10px;*/
+	border: 2px #aa8e71;
+}
+
+@media screen and (min-width: 768px) {
+	.search {
+		margin: 10px 250px 0;
+	}
+}
+
+
 .where_go {
-	font-size: 50px;
-	margin: 10px;
+	font-size: 30px;
+	/*margin-top: 10px;*/
+	text-align: center;;
+}
+
+@media screen and (min-width: 768px) {
+	.where_go {
+		font-size: 35px;
+		/*margin-left: 20px;*/
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.where_go {
+		font-size: 40px;
+		margin-left: 50px;
+	}
 }
 
 .btn {
 	border-radius: 40px;
 	background-color: #db3b15;
-	padding: 20px 35px;
-	border-color: #db3b15;
-	margin-top:10px;
-	margin-right: 40px;
+	padding: 10px 25px;
+	/*margin-top: 10px;*/
+	/*margin-right: 15px;*/
 	color: white;
-}
-.e_mail {
-	background: url(../img/icon_envelope.png) no-repeat;
+	box-shadow: 0 1px 0px 0px #983223;
 }
 
-.tel 
-{
+.e_mail {
+	background: url(../img/icon_envelope.png) no-repeat;
+	background-size: 30px;
+	padding: 10px 40px;
+	display: inline-block;
+}
+
+.tel {
 	background: url(../img/icon_phone.png) no-repeat;
+	background-size: 20px;
+	padding: 10px 30px;
+	display: inline-block;
 }
