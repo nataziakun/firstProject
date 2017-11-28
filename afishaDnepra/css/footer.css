@@ -1,0 +1,24 @@
+.footer-l {
+    background-color: red;
+    width: 60%;
+}
+.footer-r {
+    background-color: green;
+    width: 40%;
+}
+.footer-input {
+    padding: 10px 15px;
+	border-radius: 40px;
+	font-size: 14px;
+	background-color: rgba(255,255,255,.35);
+	width: 80%;
+    border: 2px #aa8e71;
+    background-image: 
+}
+.f-social{
+    text-align: left;
+    margin-top: 15px;
+}
+.f-social li a {
+    margin-right: 10px;
+}
