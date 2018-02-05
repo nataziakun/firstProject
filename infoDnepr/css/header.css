@@ -1,0 +1,58 @@
+.head {
+    background-color: #0d7e6d;
+    /* height: 48px; */
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.head-right {
+    /* text-align: right; */
+}
+
+.btn {
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #0d7e6d;
+    color: white;
+}
+
+.search {
+    background: #fff;
+}
+
+.nav {
+    background: #0d7e6d;
+    color: white;
+}
+
+.nav li {
+    display:inline-block;  
+}
+.menu { 
+    border-right: 1px solid white;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.nav .menu a:hover {
+    background: red;
+
+}
+.menu-active {
+    background: #E8E8E8;
+    position: absolute;
+    width: 30%;
+    display: none;
+}
+
+.menu-active li {
+    display: block;
+}
+
+.nav li.menu:hover .menu-active {
+    display: block;
+}
