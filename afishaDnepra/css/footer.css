@@ -1,19 +1,27 @@
+.footer {
+    padding: 10px 15px;
+}
+
 .footer-l {
-    background-color: red;
+    /* background-color: red; */
     width: 60%;
 }
 .footer-r {
-    background-color: green;
+    /* background-color: green; */
     width: 40%;
+    padding-top: 10px;
 }
 .footer-input {
-    padding: 10px 15px;
+    padding: 10px 60px;
 	border-radius: 40px;
 	font-size: 14px;
 	background-color: rgba(255,255,255,.35);
 	width: 80%;
     border: 2px #aa8e71;
-    background-image: 
+    background-image: url(../img/footer_envelope.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 10%;
 }
 .f-social{
     text-align: left;
@@ -21,4 +29,13 @@
 }
 .f-social li a {
     margin-right: 10px;
+}
+.footer-btn {
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 2px;
+}
+
+.footer-logo {
+    width: 240px;
 }

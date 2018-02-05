@@ -1,0 +1,170 @@
+.recommend {
+    text-align: center;
+}
+
+.dates {
+    text-align: center;
+    
+}
+
+.dates a {
+    position: relative;
+    margin: 0 30px;
+    padding-bottom: 5px;
+}
+
+.dates a:hover {
+    text-decoration: none;
+}
+
+.dates a:hover::after {
+    display: block;
+}
+
+.dates a span {
+    background: #db3b15;
+    display: none;
+    color: #fff; 
+    padding: 5px 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px #000; 
+    position: absolute;
+    top: -12px;
+    /* left: 50%; */
+    right: -20px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.dates a:hover span {
+    display: block;
+}
+.dates a::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+.dates a::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #000;
+    display: block;
+    left: -30px;
+    position: absolute;
+    top: 5px;
+}
+
+.dates a:first-child::before {
+    display: none;
+}
+
+.pagination .pages {
+    text-align: right;
+}
+
+.pagination .pages .arrow-left {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 10px 5px 0;
+    border-color: transparent #000 transparent transparent;    
+}
+
+.pagination .pages .arrow-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent #000;   
+}
+
+.pagination .pages .arrow-right:hover {
+    border-color: transparent transparent transparent #db3b15;  
+}
+
+.pagination .dots {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.pagination .dots li {
+    display: inline-block;
+}
+.pagination .dots li a {
+    display: inline-block;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: #fff solid 1px;
+    margin: 0 2px;
+}
+
+.pagination .dots li a:hover {
+    /* border: #fff solid 1px; */
+    background: none;
+    /* height: 12px;
+    width: 12px; */
+    transform: scale(1.5);
+}
+
+.events li {
+    display: inline-block;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.events li:hover {
+    box-shadow:  0 0 20px rgba(0,0,0,1);
+    transform: scale(1.04);
+    z-index: 2;
+}
+
+.events li a {
+    width: 205px;
+    height: 250px;
+    display: block;
+}
+
+.events li a img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.events div{
+    background: #00ffff;
+    display: none;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /* top: -35px; */
+    min-height: 35px;
+    bottom: 0;
+}
+
+.events li:hover div {
+    display: block;
+}    
+.events div button {
+    background: white;
+    box-shadow: 0 1px 0px 0px black;
+    border-radius: 10px;
+    padding: 4px 6px;
+    position: absolute;
+}

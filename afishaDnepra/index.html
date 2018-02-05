@@ -7,6 +7,7 @@
     <title>Afisha Dnepra - Home</title>
 
     <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link rel="stylesheet" href="css/vendor/animate.css">
     <link rel="stylesheet" href="css/vendor/slick.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/helper.css">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main-content.css">
     <link rel="stylesheet" href="css/home.css">
 
     <script src="js/vendor/jquery-3.2.1.min.js"></script>
@@ -22,99 +24,311 @@
     <script src="js/home.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <a href="#" class="logo">
-                <img src="img/header_logo.png" class="header-logo">
-                <img src="img/header_logo_sub.png" class="header-sublogo">
-            </a>
-            <div class="contacts">
-                <form class="contat-form cf">
-                    <h3 class="fl-l where_go ml-2">Куда пойти?</h3>
-                    <div class="fl-r">
-                        <button type="submit" class="btn mr-2">ПОИСК</button>
-                        <a href="#" class="btn">ВОЙТИ</a>
+    <div class="full-header-bg">
+        <div class="top-left-bg">
+            <div class="top-right-bg">
+                <header class="header">
+                    <div class="wrapper">
+                        <a href="#" class="hamburger-menu">
+                            <span></span>
+                        </a>
+                        <a href="#" class="header-logo">
+                            <img class="A-letter-first animated swing" src="img/header_logo_A.png" width="140" alt="Логотип Afisha Dnepra">
+                            <img class="F-letter animated swing" src="img/header_logo_F.png" width="140" alt="Логотип Afisha Dnepra">
+                            <img class="I-letter animated swing" src="img/header_logo_I.png" width="140" alt="Логотип Afisha Dnepra">
+                            <img class="S-letter animated swing" src="img/header_logo_S.png" width="140" alt="Логотип Afisha Dnepra">
+                            <img class="H-letter animated swing" src="img/header_logo_H.png" width="140" alt="Логотип Afisha Dnepra">
+                            <img class="A-letter animated swing" src="img/header_logo_A.png" width="140" alt="Логотип Afisha Dnepra">
+                            <img class="second-logo-image" src="img/header_logo_sub.png" width="370" alt="Логотип Afisha Dnepra">
+                        </a>
+                        <div class="contacts">
+                            <form class="contat-form cf">
+                                <h3 class="where_go">Куда пойти?</h3>
+                                <div class="search">
+                                    <input type="text" placeholder="Ключевое слово, имя, дата...">
+                                </div>
+                                <div class="search-buttons">
+                                    <button type="submit" class="btn">ПОИСК</button>
+                                    <a href="#" class="btn">ВОЙТИ</a>
+                                </div>
+                            </form>
+                            <div class="text-center mt-2">
+                                <a href="#" class="e_mail">Наш Email: 9999999999@gmail.com </a>
+                                <a href="#" class="tel">тел: 050 000 00 00; 050 000 00 00 </a> 
+                            </div>
+                        </div>
+                        <div class="top-gallery"></div>
                     </div>
-                    <div class="search">
-                        <input type="text" placeholder="Ключевое слово, имя, дата...">
-                    </div>
-                </form>
-                <div class="text-center mt-2">
-                    <a href="#" class="e_mail">Наш Email: 9999999999@gmail.com </a>
-                    <a href="#" class="tel">тел: 050 000 00 00; 050 000 00 00 </a> 
-                </div>
-            </div>
-            <div class="top-gallery"></div>
-        </div>
-    </header>
-    <div class="wrapper">
-        <div class="content-shadow">
-            <div class="nav cf">
-                <ul class="menu menu-left fl-l">
-                    <li class="home"><a href="#"><span>Домой</span></a></li>
-                    <li class="map"><a href="#"><span>Карта</span></a></li>
-                </ul>
-                <a href="#" class="calendar menu-right fl-r"><span>Календарь</span></a>
-                <ul class="menu menu-center">
-                    <li class="sport"><a href="#"><span>Спорт</span></a></li>
-                    <li class="theater"><a href="#"><span>Театры</span></a></li>
-                    <li class="club"><a href="#"><span>Клубы</span></a></li>
-                    <li class="movie"><a href="#"><span>Кино</span></a></li>
-                    <li class="party"><a href="#"><span>Праздники</span></a></li>
-                    <li class="exhibition"><a href="#"><span>Выставки</span></a></li>
-                    <li class="presentation"><a href="#"><span>Презентации</span></a></li>
-                    <li class="children"><a href="#"><span>Детям</span></a></li>
-                    <li class="other"><a href="#"><span>Остальное</span></a></li>
-                </ul>
-            </div>
-            <div class="content-wrap cf">
-                <aside class="sidebar fl-r">
-                    <ul class="social">
-                        <li class="fb"><a href="#"></a></li>
-                        <li class="twitter"><a href="#"></a></li>
-                        <li class="youtube"><a href="#"></a></li>
-                        <li class="instagram"><a href="#"></a></li>
-                    </ul>
-                    <div class="news-border">
-                        <h2 class="news-header text-l f-normal white mb-2 ">НОВОСТИ</h2>
-                        <ul class="news">
-                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
-                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
-                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
-                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
-                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
-                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
-                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
-                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
-                        </ul>
-                    </div>
-                </aside>
-                <main class="main-content">
+                </header>
+                <div class="wrapper content-top-bg">
+                    <div class="content-bottom-bg">
+                        <div class="content-shadow">
+                            <div class="nav cf">
+                                <span class="nav-close">&cross;</span>
+                                <ul class="menu menu-left">
+                                    <li class="home"><a href="#"><span>Домой</span></a></li>
+                                    <li class="map"><a href="#"><span>Карта</span></a></li>
+                                </ul>
+                                <a href="#" class="calendar menu-right"><span>Календарь</span></a>
+                                <ul class="menu menu-center">
+                                    <li class="sport"><a href="#"><span>Спорт</span></a></li>
+                                    <li class="theater"><a href="#"><span>Театры</span></a></li>
+                                    <li class="club"><a href="#"><span>Клубы</span></a></li>
+                                    <li class="movie"><a href="#"><span>Кино</span></a></li>
+                                    <li class="party"><a href="#"><span>Праздники</span></a></li>
+                                    <li class="exhibition"><a href="#"><span>Выставки</span></a></li>
+                                    <li class="presentation"><a href="#"><span>Презентации</span></a></li>
+                                    <li class="children"><a href="#"><span>Детям</span></a></li>
+                                    <li class="other"><a href="#"><span>Остальное</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="content-wrap cf">
+                                <aside class="sidebar fl-r">
+                                    <ul class="social">
+                                        <li class="fb"><a href="#"></a></li>
+                                        <li class="twitter"><a href="#"></a></li>
+                                        <li class="youtube"><a href="#"></a></li>
+                                        <li class="instagram"><a href="#"></a></li>
+                                    </ul>
+                                    <div class="news-border">
+                                        <h2 class="news-header text-l f-normal white mb-2 ">НОВОСТИ</h2>
+                                        <ul class="news">
+                                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                                            <li><a href="#" class="text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></li>
+                                        </ul>
+                                    </div>
+                                    <span>МОДНОЕ ВИДЕО</span>
+                                    <div class="videos">
+                                        <ul class="sl-1">
+                                            <li>
+                                                <img src="img/slick_1.png" alt="slick">
+                                            </li>
+                                            <li>
+                                                <img src="img/slick_1.png" alt="slick">
+                                            </li>
+                                            <li>
+                                                <img src="img/slick_1.png" alt="slick">
+                                            </li>
+                                            <li>
+                                                <img src="img/slick_1.png" alt="slick">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span>ТРЕЙЛЕРЫ И КЛИПЫ</span>
+                                    <div class="videos">
+                                        <ul class="sl-1">
+                                            <li>
+                                                <img src="img/slick_1.png" alt="slick">
+                                            </li>
+                                            <li>
+                                                <img src="img/slick_1.png" alt="slick">
+                                            </li>
+                                            <li>
+                                                <img src="img/slick_1.png" alt="slick">
+                                            </li>
+                                            <li>
+                                                <img src="img/slick_1.png" alt="slick">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                                <main class="main-content">
+                                    <div class="recommend mt-2">
+                                        <p class="black text-xl">РЕКОМЕНДУЕМ</p>
+                                    </div>
+                                    <div class="dates mt-1">
+                                        <a href="#">сегодня
+                                            <span>2</span>
+                                        </a>
+                                        <a href="#">завтра
+                                            <span>+2</span>
+                                        </a>
+                                        <a href="#">на этой неделе
+                                            <span>+10</span>
+                                        </a>
+                                    </div>
+                                    <div class="pagination mt-2">
+                                        <div class="pages fl-r">
+                                            <a href="#" class="arrow-left"></a> 
+                                            <span>1/20</span>
+                                            <a href="#" class="arrow-right"></a> 
+                                        </div>
+                                        <ul class="dots">
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="events">
+                                        <li class="item">
+                                            <a href="#"><img src="img/event1.png" alt="" /></a>
+                                            <div>
+                                                <button type="submit" class="info">инфо...</button>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#"><img src="img/event1.png" alt="" /></a>
+                                            <div>
+                                                <button type="submit" class="info">инфо...</button>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#"><img src="img/event1.png" alt="" /></a>
+                                            <div>
+                                                <button type="submit" class="info">инфо...</button>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#"><img src="img/event1.png" alt="" /></a>
+                                            <div>
+                                                <button type="submit" class="info">инфо...</button>
+                                            </div>
+                                        </li> 
+                                        <li class="item">
+                                            <a href="#"><img src="img/event1.png" alt="" /></a>
+                                            <div>
+                                                <button type="submit" class="info">инфо...</button>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#"><img src="img/event1.png" alt="" /></a>
+                                            <div>
+                                                <button type="submit" class="info">инфо...</button>
+                                            </div>
+                                        </li>  
+                                        <li class="item">
+                                            <a href="#"><img src="img/event1.png" alt="" /></a>
+                                            <div>
+                                                <button type="submit" class="info">инфо...</button>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#"><img src="img/event1.png" alt="" /></a>
+                                            <div>
+                                                <button type="submit" class="info">инфо...</button>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#"><img src="img/event1.png" alt="" /></a>
+                                            <div>
+                                                <button type="submit" class="info">инфо...</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </main>
+                            </div>
+                            <div class="content">
+                                    <h2 class="event-header">СОБЫТИЯ</h2>
+                                    <div class="events-2">
+                                        <div class="event-item">
+                                            <div class="event-item-img">
+                                                <img src="img/event-item.png" class="event-picture" alt="event">
+                                                <span class="overlay">
+                                                    <a href="#" class="overlay-btn">
+                                                        <img src="http://web.comprepair.dp.ua/wp-content/themes/twentyten/img/zoom-icon.png" alt="icon" class="overlay-img">
+                                                    </a>
+                                                    <a href="#" class="overlay-btn1">
+                                                        <img src="http://web.comprepair.dp.ua/wp-content/themes/twentyten/img/link-icon.png" alt="icon" class="overlay-img">
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div class="event-item-content">
+                                                <p>Постфактум</p>
+                                            </div>
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-item-img">
+                                                <img src="img/event-item.png" alt="event">
+                                                <span class="overlay">
+                                                    <a href="#" class="overlay-btn">
+                                                        <img src="http://web.comprepair.dp.ua/wp-content/themes/twentyten/img/zoom-icon.png" alt="icon" class="overlay-img">
+                                                    </a>
+                                                    <a href="#" class="overlay-btn1">
+                                                        <img src="http://web.comprepair.dp.ua/wp-content/themes/twentyten/img/link-icon.png" alt="icon" class="overlay-img">
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div class="event-item-content">
+                                                <p>Резензии</p>
+                                            </div>
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-item-img">
+                                                <img src="img/event-item.png" alt="event">
+                                                <span class="overlay">
+                                                    <a href="#" class="overlay-btn">
+                                                        <img src="http://web.comprepair.dp.ua/wp-content/themes/twentyten/img/zoom-icon.png" alt="icon" class="overlay-img">
+                                                    </a>
+                                                    <a href="#" class="overlay-btn1">
+                                                        <img src="http://web.comprepair.dp.ua/wp-content/themes/twentyten/img/link-icon.png" alt="icon" class="overlay-img">
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div class="event-item-content">
+                                                <p>18+</p>
+                                            </div>
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-item-img">
+                                                <img src="img/event-item.png" alt="event">
+                                                <span class="overlay">
+                                                    <a href="#" class="overlay-btn">
+                                                        <img src="http://web.comprepair.dp.ua/wp-content/themes/twentyten/img/zoom-icon.png" alt="icon" class="overlay-img">
+                                                    </a>
+                                                    <a href="#" class="overlay-btn1">
+                                                        <img src="http://web.comprepair.dp.ua/wp-content/themes/twentyten/img/link-icon.png" alt="icon" class="overlay-img">
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div class="event-item-content">
+                                                <p>Рейтенги</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                </main>
+                                </div>
+                            <footer class="footer cf white">
+                                <div class="footer-l fl-l">
+                                    <div class="contacts-foo">
+                                        <h2>КОНТАКТЫ</h2>
+                                        <p class="mt-1">Г.ДНЕПР</p>
+                                        <p class="mt-1">УЛ.Героев КРУТ,17</p>
+                                        <p class="mt-1">+38 (056)744-34074</p>
+                                        <a href="#" class="footer-logo">
+                                            <img src="img/logo_footer.png" alt="logo" class="footer-logo mt-2 mb-2">
+                                        </a>
+                                        <p>&copy; 2017 Theme20. All Rights Reserved.</p>
+                                    </div>
+                                </div>
+                                <div class="footer-r fl-r">
+                                    <p>Подписывайтесь на нашу новостную рассылку.</p>
+                                    <div class="footer-input mt-2">
+                                        <input type="text" placeholder="your@email.com">
+                                        <button type="submit" class="btn mr-2 footer-btn">Подписывайся</button>
+                                    </div>
+                                    <ul class="f-social social">
+                                        <li class="fb"><a href="#"></a></li>
+                                        <li class="twitter"><a href="#"></a></li>
+                                        <li class="youtube"><a href="#"></a></li>
+                                        <li class="instagram"><a href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <footer class="footer">
-                <div class="footer-l fl-l">
-                    <div class="contacts">
-                        <h2>КОНТАКТЫ</h2>
-                        <p>Г.ДНЕПР <br> УЛ.Героев КРУТ,17<br> +38 (056)744-34074</p>
-                        <p>Наше місто</p>
-                        <p>&copy 2017 Theme20. All Rights Reserved.</p>
-                    </div>
-                </div>
-                <div class="footer-r fl-r">
-                    <p>Подписывайтесь на нашу новостную рассылку.</p>
-                    <div class="footer-input">
-                        <input type="text" placeholder="your@email.com">
-                    </div>
-                    <ul class="f-social social">
-                        <li class="fb"><a href="#"></a></li>
-                        <li class="twitter"><a href="#"></a></li>
-                        <li class="youtube"><a href="#"></a></li>
-                        <li class="instagram"><a href="#"></a></li>
-                    </ul>
-                </div>
-            </footer>
         </div>
     </div>
 </body>

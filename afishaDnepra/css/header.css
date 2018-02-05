@@ -1,15 +1,196 @@
 .header {
-	background: url(../img/bg_header.png) no-repeat 50% 0;
-	min-height: 893px;
+	min-height: 200px;
 	box-shadow: 0px 30px 100px rgba(0,0,0,.6);
 }
+
+
+@media screen and (min-width: 768px) {
+    .header {
+        min-height: 800px;
+    }
+}
+
+.header .hamburger-menu {
+	position: absolute;
+    right: 20px;
+	top: 30px;
+	display: block;
+	height: 30px;
+}
+
+.header .hamburger-menu span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: #fff;
+	opacity: .7;
+	border-radius: 3px;
+}
+
+.header .hamburger-menu span:before,
+.header .hamburger-menu span:after {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: #fff;
+	border-radius: 3px;
+	position: absolute;
+}
+
+.header .hamburger-menu span:before {
+	top: -7px;
+}
+
+.header .hamburger-menu span:after {
+	top: 7px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .header .hamburger-menu  {
+        display: none;
+    }
+}
+
+.header-logo {
+	display: block;
+	width: 85%;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .header .header-logo {
+		max-width: 670px;
+		margin: 0 auto;
+    }
+}
+
+.header-logo:hover {
+	text-decoration: none;
+}
+
+.header-logo img {
+	
+	margin-top: -10px;
+}
+
+img.A-letter-first {
+	position: relative;
+	top: -10px;
+	width: 50px;
+}
+
+img.F-letter {
+	width: 44px;
+	margin-left: -13px;
+}
+
+img.I-letter {
+	position: relative;
+	top: -4px;
+	width: 21px;
+	margin-left: -8px;
+}
+
+img.S-letter {
+	position: relative;
+	width: 50px;
+	top: -5px;
+	margin-left: -7px;
+}
+
+img.H-letter {
+	margin-left: -7px;
+	width: 50px;
+}
+
+img.A-letter {
+	position: relative;
+	top: -4px;
+	width: 55px;
+	margin-left: -9px;
+}
+
+img.second-logo-image {
+	width: 130px;
+	position: absolute;
+	top: 70%;
+	left: 170px;
+}
+
+@media screen and (min-width: 768px) {
+	img.A-letter-first {
+		position: relative;
+		top: -10px;
+		width: 155px;
+	}
+	
+	img.F-letter {
+		width: 125px;
+		margin-left: -35px;
+	}
+	
+	img.I-letter {
+		position: relative;
+		top: -10px;
+		width: 55px;
+		margin-left: -20px;
+	}
+	
+	img.S-letter {
+		position: relative;
+		top: -10px;
+		margin-left: -22px;
+		width: 140px;
+	}
+	
+	img.H-letter {
+		margin-left: -24px;
+		width: 140px;
+	}
+	
+	img.A-letter {
+		position: relative;
+		top: -10px;
+		width: 155px;
+		margin-left: -30px;
+	}
+
+	img.second-logo-image {
+		width: 385px;
+		position: absolute;
+		top: 60%;
+		right: -50px;
+		left: auto;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	img.second-logo-image {
+		right: -100px;
+	}
+}
+
 .contacts {
 	background-color: rgba(255,255,255,.35);
 	min-height: 127px;
 	padding: 10px 20px;
 }
+
 .search {
-	margin: 10px 60px 0;
+	margin: 10px 0px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.search {
+		/* margin: 10px 250px 0; */
+		margin-left: 25px;
+		float: left;
+		width: 40%;
+	}
 }
 
 .search input {
@@ -22,9 +203,16 @@
 	border: 2px #aa8e71;
 }
 
+.search-buttons {
+	text-align: center;
+	margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
-	.search {
-		margin: 10px 250px 0;
+	.search-buttons {
+		text-align: right;
+		margin-top: 0;
+		margin-left: calc(260px + 40%);
 	}
 }
 
@@ -32,13 +220,16 @@
 .where_go {
 	font-size: 30px;
 	/*margin-top: 10px;*/
-	text-align: center;;
+	text-align: center;
+	float: none;
+	margin-left: 0;
 }
 
 @media screen and (min-width: 768px) {
 	.where_go {
 		font-size: 35px;
 		/*margin-left: 20px;*/
+		float: left;
 	}
 }
 
@@ -52,23 +243,52 @@
 .btn {
 	border-radius: 40px;
 	background-color: #db3b15;
-	padding: 10px 25px;
-	/*margin-top: 10px;*/
-	/*margin-right: 15px;*/
+	padding: 7px 20px;
+	font-size: 13px;
 	color: white;
+	display: inline-block;
 	box-shadow: 0 1px 0px 0px #983223;
 }
 
+@media screen and (min-width: 768px){
+	.btn {
+		padding: 10px 17px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.btn {
+		padding: 10px 24px;
+		font-size: 14px;
+	}
+}
+
 .e_mail {
-	background: url(../img/icon_envelope.png) no-repeat;
-	background-size: 30px;
-	padding: 10px 40px;
+	background: url(../img/icon_envelope.png) no-repeat left center;
+	background-size: 20px;
+	padding: 7px 0 7px 30px;
 	display: inline-block;
+	text-align: left;
 }
 
 .tel {
-	background: url(../img/icon_phone.png) no-repeat;
-	background-size: 20px;
-	padding: 10px 30px;
+	background: url(../img/icon_phone.png) no-repeat left center;
+	background-size: 15px;
+	padding: 7px 0 7px 20px;
 	display: inline-block;
+	text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+	.e_mail {
+		background-size: 30px;
+		padding: 10px 40px;
+		display: inline-block;
+	}
+	
+	.tel {
+		background-size: 20px;
+		padding: 10px 30px;
+		display: inline-block;
+	}
 }
