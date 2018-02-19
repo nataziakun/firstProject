@@ -60,13 +60,127 @@ button {
     margin: 0 auto;
 }
 
-.content {
-    height: 100px;
-    border: red 1px solid;
+.main-content {
+    min-height: 100px;
+    margin-right: 33%;
+    padding-right: 15px;
+    border-right: dotted 1px black;
 }
 
 .sidebar {
     width: 33%;
-    background-color: green;
     height: 100px;
+}
+
+.headline {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*.date {
+    margin-bottom: 15px; 
+}
+
+.pic {
+    width: 900px;
+    height: 946px;
+}
+
+.news {
+font-size: 0.9rem;
+color: #2d7061;
+font-style: italic;
+text-decoration: underline;
+margin:10px 0 10px 0;
+}
+
+.quote {
+    border: dotted 1px black;
+}
+
+.name {
+    color: #0d7e6d;
+}
+.name:hover {
+    text-decoration: none;
+    color:black;
+}
+
+.readmore {
+    padding: 5px;
+    background-color: #0d7e6d;
+    color: white;
+    margin-bottom: 12px;
+}
+.readmore-content li {
+    display: inline-block;
+    margin-bottom: 4px;
+    overflow: hidden;
+    width: 32%;
+    padding: 10px;
+    color: #0d7e6d;
+}
+
+.readmore-content li a:hover {
+    text-decoration: none;
+}
+
+.readmore-content li:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+    transform: scale(1.04);
+    color: black;
+}*/
+
+.main-news li {
+    display: inline-block;
+    width: 49%;
+    padding: 10px;
+}
+.main-news-plot {
+    padding: 10px;
+}
+.main-news-plot:hover {
+    box-shadow: 1px 1px 13px -1px rgba(0,0,0,0.75);
+    color: black;
+    z-index: 4;
+}
+.news-item-header {
+    background-color:#0d7e6d;
+    font-size: 25px;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 12px;
+}
+.news-item-name:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.headline {
+    color: #0d7e6d;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.headline a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.date {
+    font-size: 13px;
+    color: #2d7061;
+}
+
+.news-text {
+    color: black;
+    font-size: 15px;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #d2d2d2;
+
+}
+
+.news-text a:hover {
+    text-decoration: none;
 }

@@ -7,3 +7,12 @@
     background-color: #015c4e;
     padding: 10px 0px;
 }
+
+.foot-icon {
+    position: absolute;
+}
+
+.facebook {
+    position: relative;
+    left: 25px;
+}

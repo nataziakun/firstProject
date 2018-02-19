@@ -1,3 +1,7 @@
+.header {
+    margin-bottom: 15px;
+}
+
 .head {
     background-color: #0d7e6d;
     /* height: 48px; */
@@ -24,35 +28,122 @@
 .nav {
     background: #0d7e6d;
     color: white;
+    font-size: 0px;
+    text-align: center;
 }
 
 .nav li {
-    display:inline-block;  
-}
-.menu { 
-    border-right: 1px solid white;
+    display:inline-block;
+    font-size: 14px;  
 }
 
-.menu a {
+.item { 
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+.item a {
     display: block;
     padding: 10px 10px;
     text-decoration: none;
 }
-.nav .menu a:hover {
+.nav .item > a:hover {
     background: red;
+    transition: all 0.25s ease-in 0s;
 
 }
-.menu-active {
-    background: #E8E8E8;
+
+.nav .item:last-child {
+    border: 0;
+}
+
+.sub-nav {
+    background: #e8e8e8;
     position: absolute;
     width: 30%;
     display: none;
+    text-align: left;
+    z-index: 3;
 }
 
-.menu-active li {
+.sub-nav li {
     display: block;
 }
 
-.nav li.menu:hover .menu-active {
+.sub-nav a {
+    color: #2d7061;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #464646;
+    padding: 10px 0 10px 10px;
+}
+
+.sub-nav .count {
+    font-size: 10px;
+    font-weight: normal;
+    float: right;
+    padding: 10px 0;
+    width: 40px;
+    text-align: center;
+    border-left: 1px solid #2d7061;
     display: block;
+}
+
+.sub-nav .text {
+    margin-right: 40px;
+    display: block;
+}
+
+.sub-nav a:hover {
+    color: #000;
+    background: #cacaca;
+}
+
+@media (min-width: 768px) {
+    .nav li.item:hover .sub-nav {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .scrollOff {
+        overflow: hidden;
+    }
+
+    .nav {
+        position: absolute;
+        top: 0;
+        left: -80%;
+        height: 100%;
+        width: 80%;
+        z-index: 100;
+        box-shadow: 1px 0 2px 0 rgba(0,0,0,.5);
+        display: none;
+    }
+
+    .nav.active {
+        left: 0;
+        overflow: scroll;
+    }
+
+    .nav li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #fff;
+        border-right: 0;
+    }
+
+    .nav .sub-nav {
+        width: 100%;
+        position: relative;
+    }
+
+    .sub-nav a {
+        font-size: 12px;
+    }
+
+    .sub-nav li:last-child a {
+        border-bottom: 0;
+    }
 }
